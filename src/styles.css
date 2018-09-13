@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: #C1D4E2;
+  background: -webkit-linear-gradient(90deg, #C1D4E2, #FCE4E4);
+  background: linear-gradient(90deg, #C1D4E2, #FCE4E4);
+  margin: 0;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
