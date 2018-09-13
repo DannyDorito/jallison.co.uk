@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  tracing: false
+  tracing: false,
+  baseUrl: ''
 };

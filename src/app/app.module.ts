@@ -8,13 +8,23 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ContactComponent } from './contact/contact.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { SkillsComponent } from './skills/skills.component';
+import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
     // components
     AppComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent,
+    ProjectsComponent,
+    SkillsComponent,
+    EducationComponent,
+    ExperienceComponent
   ],
   imports: [
     // required
