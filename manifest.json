@@ -1,10 +1,10 @@
 {
-  "name": "portfolio",
-  "short_name": "portfolio",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "John Allison",
+  "short_name": "John A",
+  "theme_color": "#c1d4e2",
+  "background_color": "#c1d4e2",
   "display": "standalone",
-  "scope": "/",
+  "Scope": "/",
   "start_url": "/",
   "icons": [
     {
