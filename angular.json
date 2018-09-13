@@ -22,6 +22,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/CNAME",
+              "src/sitemap.xml",
               "src/robots.txt",
               "src/manifest.json"
             ],
