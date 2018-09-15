@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'futura';
-  src: local('futura'), url(assets/futura.otf);
+  src: local('futura'), url(futura.otf);
   font-weight: bold;
   font-kerning: normal;
 }
