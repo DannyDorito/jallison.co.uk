@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     if (this.drawing) {
       this.ctx.beginPath();
       this.ctx.strokeStyle = this.gradient;
-      this.ctx.lineWidth = 10;
+      this.ctx.lineWidth = 7;
       this.ctx.lineJoin = 'round';
       this.ctx.moveTo(this.lastX, this.lastY);
       this.ctx.lineTo(x, y);

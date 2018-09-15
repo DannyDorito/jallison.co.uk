@@ -1,11 +1,3 @@
-input {
-  background: transparent;
-  font: inherit;
-  border-color: #C1D4E2;
-  outline: none;
-  width: 100%;
-}
-
 .input-div {
   padding-bottom: 20px;
 }

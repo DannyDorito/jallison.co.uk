@@ -4,10 +4,6 @@ body {
   background: linear-gradient(90deg, #C1D4E2, #FCE4E4);
   font-size: 2em;
   text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
 }
 
 ::selection {
@@ -22,20 +18,11 @@ body {
   align-items: center;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center;
-  padding-bottom: 5%;
-}
-
-.nav-space {
-  width: 100%;
-}
-
-.router-link-active {
-  opacity: 1;
+.unselectable {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 button {
@@ -56,4 +43,12 @@ button:active {
 
 button:focus {
   outline-color: #C1D4E2;
+}
+
+input {
+  background: transparent;
+  font: inherit;
+  border-color: #C1D4E2;
+  outline: none;
+  width: 100%;
 }

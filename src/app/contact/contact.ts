@@ -2,7 +2,7 @@ export class Contact {
   email: string;
   subject: string;
   message: string;
-  constructor (
+  constructor(
     _email: string,
     _subject: string,
     _message: string

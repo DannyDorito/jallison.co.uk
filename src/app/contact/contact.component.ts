@@ -10,7 +10,6 @@ import { FormControl, Validators } from '@angular/forms';
 export class ContactComponent {
   email = new Contact('', '', '');
   emailControl = new FormControl(Validators.required, Validators.email);
-
   showForm = false;
 
   onSubmit() {
