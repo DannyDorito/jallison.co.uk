@@ -13,6 +13,7 @@ body {
   font-size: 2em;
   text-align: center;
   font-family: 'futura';
+  overflow-x: hidden;
 }
 
 ::selection {

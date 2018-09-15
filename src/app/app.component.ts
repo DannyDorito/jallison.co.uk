@@ -17,16 +17,16 @@ export class AppComponent implements OnInit {
     this.canvas = <HTMLCanvasElement> document.getElementById('canvas');
     this.ctx = this.canvas.getContext('2d');
     this.gradient = this.ctx.createLinearGradient(0, 0, window.innerWidth, window.innerHeight);
-    this.setGradient('#FCE4E4', '#C1D4E2');
-    this.setSize();
+    this.setCanvasGradient('#FCE4E4', '#C1D4E2');
+    this.resizeCanvas();
   }
 
-  setSize() {
+  resizeCanvas() {
     this.ctx.canvas.width = window.innerWidth;
     this.ctx.canvas.height = window.innerHeight;
   }
 
-  setGradient(startGradient: string, endGradient: string) {
+  setCanvasGradient(startGradient: string, endGradient: string) {
     this.gradient.addColorStop(1, endGradient);
     this.gradient.addColorStop(0, startGradient);
   }
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  clear() {
+  clearDrawing() {
     this.ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
   }
 }

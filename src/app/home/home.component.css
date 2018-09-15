@@ -1,0 +1,23 @@
+.john-div {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.john {
+  margin: 10px;
+  font-size: 150px;
+  text-align: right;
+}
+
+.subheading {
+  font-size: 40px;
+  margin: 10px;
+}
+
+.element {
+  margin-top: 10px;
+}

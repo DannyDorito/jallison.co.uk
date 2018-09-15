@@ -15,6 +15,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 
+// services
+import { HomeService } from './home/home.service';
+
 @NgModule({
   declarations: [
     // components
@@ -38,6 +41,7 @@ import { ExperienceComponent } from './experience/experience.component';
   ],
   providers: [
     // services
+    HomeService
   ],
   bootstrap: [AppComponent]
 })
