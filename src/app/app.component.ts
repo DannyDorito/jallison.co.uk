@@ -50,12 +50,16 @@ export class AppComponent implements OnInit {
       this.ctx.lineJoin = 'round';
       this.ctx.moveTo(this.lastX, this.lastY);
       this.ctx.lineTo(x, y);
-      if (Math.abs(x - this.lastX) < 40 && Math.abs(y - this.lastY) < 40) {
+      if (Math.abs(x - this.lastX) < 30 && Math.abs(y - this.lastY) < 30) {
         this.ctx.closePath();
         this.ctx.stroke();
       }
       this.lastX = x;
       this.lastY = y;
     }
+  }
+
+  clear() {
+    this.ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
   }
 }

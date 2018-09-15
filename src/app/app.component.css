@@ -22,3 +22,11 @@ canvas {
 .router-link-active {
   opacity: 1;
 }
+
+.clear {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  font-size: 0.7em;
+  padding: 8px;
+}
