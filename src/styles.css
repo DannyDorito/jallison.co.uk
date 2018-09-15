@@ -1,9 +1,17 @@
+@font-face {
+  font-family: 'futura';
+  src: local('futura'), url(assets/futura.otf);
+  font-weight: bold;
+  font-kerning: normal;
+}
+
 body {
   background: #C1D4E2;
   background: -webkit-linear-gradient(90deg, #C1D4E2, #FCE4E4);
   background: linear-gradient(90deg, #C1D4E2, #FCE4E4);
   font-size: 2em;
   text-align: center;
+  font-family: 'futura';
 }
 
 ::selection {
