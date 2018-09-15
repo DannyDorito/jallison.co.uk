@@ -1,8 +1,8 @@
 <div (mousemove)="move($event)" (mousedown)="down($event)" (mouseup)="drawing = false" (window:resize)="setSize()">
   <div class="nav">
-    <button class="nav-space unselectable" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</button>
-    <button class="nav-space unselectable" [routerLink]="['/projects']" routerLinkActive="router-link-active">Projects</button>
-    <button class="nav-space unselectable" [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</button>
+    <button class="nav-space" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</button>
+    <button class="nav-space" [routerLink]="['/projects']" routerLinkActive="router-link-active">Projects</button>
+    <button class="nav-space" [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</button>
   </div>
   <router-outlet></router-outlet>
   <canvas id="canvas"></canvas>
