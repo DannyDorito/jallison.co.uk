@@ -1,3 +1,19 @@
 <div class="center">
-  <div>Contact</div>
+  <div>Contact Me</div>
+  <form #contactForm="ngForm" (ngSubmit)="onSubmit()" *ngIf="showForm">
+    <div class="input-div">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required [(ngModel)]="email.email" name="email">
+    </div>
+    <div *ngIf="emailControl.invalid && (emailControl.dirty || emailControl.touched)">{{getErrorMessage()}}</div>
+    <div class="input-div">
+      <label for="subject">Subject:</label>
+      <input type="text" required [(ngModel)]="email.subject" name="subject">
+    </div>
+    <div class="input-div">
+      <label for="message">Message:</label>
+      <input type="text" required [(ngModel)]="email.message" name="message">
+    </div>
+    <button type="submit" class="submit">Submit</button>
+  </form>
 </div>
