@@ -3,6 +3,7 @@
   src: local('futura'), url(futura.otf);
   font-weight: bold;
   font-kerning: normal;
+  font-display: auto;
 }
 
 body {
