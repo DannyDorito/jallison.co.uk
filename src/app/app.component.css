@@ -17,6 +17,7 @@ canvas {
 
 .nav-space {
   width: 100%;
+  font-size: 5vw;
 }
 
 .router-link-active {
@@ -27,6 +28,6 @@ canvas {
   position: fixed;
   left: 0;
   bottom: 0;
-  font-size: 0.6em;
+  font-size: 50%;
   margin: 8px;
 }
