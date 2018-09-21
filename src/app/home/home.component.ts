@@ -12,13 +12,12 @@ export class HomeComponent implements OnInit {
   constructor(private homeService: HomeService) {}
 
   ngOnInit() {
-    // this.getBio();
-    this.bio = 'Comp Sci UoH | Cat on Google Maps';
+    this.getBio();
   }
 
   getBio() {
-    this.homeService.getBio().subscribe(result => {
-      // this.bio = result;
+    this.homeService.getBio('DannyDorito').subscribe(result => {
+      this.bio = result.bio;
     });
   }
 }
