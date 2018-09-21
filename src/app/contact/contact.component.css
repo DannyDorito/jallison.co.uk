@@ -29,6 +29,10 @@
   color: #d93025;
 }
 
+.youtube:hover {
+  color: #e30000;
+}
+
 .contact-div {
   margin-bottom: 20px;
 }
