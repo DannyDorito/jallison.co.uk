@@ -44,15 +44,10 @@ button {
 
 button:hover {
   opacity: 1;
-  outline-color: #C1D4E2;
-}
-
-button:active {
-  outline-color: #C1D4E2;
 }
 
 button:focus {
-  outline-color: #C1D4E2;
+  outline-color: transparent;
 }
 
 input {
