@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class HomeService {
   constructor(private http: HttpClient) { }
 
-  getBio(username: string) {
+  getGitHubProfile(username: string) {
     return this.http.get <GitHubProfile> ('https://api.github.com/users/' + username);
   }
 }
