@@ -1,4 +1,5 @@
-<div (mousemove)="move($event)" (mousedown)="down($event)" (mouseup)="drawing = false" (window:resize)="resizeCanvas()">
+<div (mousemove)="move($event)" (mousedown)="down($event)" (mouseup)="drawing = false" (window:resize)="resizeCanvas()"
+  (touch)="down($event)">
   <div class="nav">
     <button class="nav-space" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</button>
     <button class="nav-space" [routerLink]="['/projects']" routerLinkActive="router-link-active">Projects</button>
