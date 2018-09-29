@@ -46,9 +46,10 @@ button:hover {
   opacity: 1;
 }
 
-button:focus {
-  outline-color: transparent;
+button:focus:not(:focus-visible) {
+  outline: none;
 }
+
 
 input {
   background: transparent;
