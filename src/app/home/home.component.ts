@@ -17,10 +17,10 @@ export class HomeComponent implements OnInit {
 
   getGitHubProfile() {
     this.homeService.getGitHubProfile('DannyDorito').subscribe(result => {
-      if (result.bio !== null) {
+      if (result.bio !== null && result.bio !== '') {
         this.bio = result.bio;
       } else {
-        this.bio = 'Comp Sci UoH | Cat on Google Maps';
+        this.bio = '...idk Something?';
       }
     });
   }
