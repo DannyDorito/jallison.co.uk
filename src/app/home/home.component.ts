@@ -7,7 +7,7 @@ import { HomeService } from '../home/home.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  bio: string;
+  bio = '...';
 
   constructor(private homeService: HomeService) {}
 
@@ -19,8 +19,6 @@ export class HomeComponent implements OnInit {
     this.homeService.getGitHubProfile('DannyDorito').subscribe(result => {
       if (result.bio !== null && result.bio !== '') {
         this.bio = result.bio;
-      } else {
-        this.bio = '...idk Something?';
       }
     });
   }
