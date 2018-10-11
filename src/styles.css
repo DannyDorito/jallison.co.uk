@@ -16,11 +16,6 @@ body {
   font-size: 30px;
 }
 
-::selection {
-  background: #C1D4E2;
-  color: black;
-}
-
 .center {
   display: flex;
   justify-content: center;
@@ -46,16 +41,8 @@ button:hover {
   opacity: 1;
 }
 
-button:focus:not(:focus-visible) {
+button:focus {
   outline: none;
-}
-
-input {
-  background: transparent;
-  font: inherit;
-  border-color: #C1D4E2;
-  outline: none;
-  width: 100%;
 }
 
 h4 {
