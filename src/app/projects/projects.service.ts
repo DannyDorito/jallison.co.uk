@@ -10,4 +10,8 @@ export class ProjectsService {
   getRepo(username: string, repo: string) {
     return this.http.get <GitHubRepo> ('https://api.github.com/repos/' + username + '/' + repo);
   }
+
+  getAllPublicRepos(username: string) {
+    return this.http.get <GitHubRepo[]> ('https://api.github.com/' + username + '/repos');
+  }
 }

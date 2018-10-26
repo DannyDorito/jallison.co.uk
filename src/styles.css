@@ -16,6 +16,14 @@ body {
   font-size: 30px;
 }
 
+.blue {
+  background-color: #C1D4E2;
+}
+
+.pink {
+  background-color: #FCE4E4;
+}
+
 .center {
   display: flex;
   justify-content: center;
