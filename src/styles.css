@@ -12,8 +12,8 @@ body {
   background: linear-gradient(90deg, #C1D4E2, #FCE4E4);
   text-align: center;
   font-family: 'futura';
-  overflow-x: hidden;
   font-size: 30px;
+  overflow: overlay;
 }
 
 .blue {
