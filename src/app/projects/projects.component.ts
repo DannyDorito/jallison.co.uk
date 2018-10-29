@@ -17,12 +17,16 @@ export class ProjectsComponent implements OnInit {
   getRepo(username: string, repo: string) {
     this.projectsService.getRepo(username, repo).subscribe(result => {
       // this.description = result.description;
+    }, error => {
+      console.log(error);
     });
   }
 
   getAllRepos(username: string) {
     this.projectsService.getAllPublicRepos(username).subscribe(result => {
       this.allRepos = result;
+    }, error => {
+      console.log(error);
     });
   }
 }
