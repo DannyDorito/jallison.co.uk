@@ -6,6 +6,10 @@
   font-display: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #C1D4E2;
   background: -webkit-linear-gradient(90deg, #C1D4E2, #FCE4E4);
