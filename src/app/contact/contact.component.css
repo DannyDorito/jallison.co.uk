@@ -37,6 +37,10 @@
   color: #e30000;
 }
 
+.switch:hover {
+  color: #e4000f;
+}
+
 .contact-div {
   margin-bottom: 20px;
 }
