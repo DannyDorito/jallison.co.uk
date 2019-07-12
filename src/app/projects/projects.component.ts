@@ -11,12 +11,12 @@ export class ProjectsComponent implements OnInit {
   constructor(private projectsService: ProjectsService) {}
 
   ngOnInit() {
-    this.repos = this.getGitHubRepos('DannyDorito');
+    // this.repos = this.getGitHubRepos('DannyDorito');
     console.log(this.repos);
   }
 
   async getGitHubRepos(username: string) {
     console.log(username);
-    this.repos = await this.getGitHubRepos('DannyDorito');
+    // this.repos = await this.getGitHubRepos('DannyDorito');
   }
 }
