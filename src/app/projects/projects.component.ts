@@ -7,16 +7,18 @@ import { ProjectsService } from './projects.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  repos: GithubRepo[] = [];
+  repos: GithubRepo;
   constructor(private projectsService: ProjectsService) {}
 
-  ngOnInit() {
-    // this.repos = this.getGitHubRepos('DannyDorito');
-    console.log(this.repos);
+  async ngOnInit() {
+    // this.repos = await this.getGitHubRepos('DannyDorito');
+    // console.log(this.repos);
   }
 
-  async getGitHubRepos(username: string) {
-    console.log(username);
-    // this.repos = await this.getGitHubRepos('DannyDorito');
+  async getGitHubRepos(username: string): Promise<GithubRepo> {
+    this.projectsService.getGitHubRepos(username).subscribe(result => {
+      return result;
+    });
+    return undefined;
   }
 }

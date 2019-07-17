@@ -5,10 +5,9 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProjectsService {
-  result = undefined;
   constructor(private http: HttpClient) { }
 
-  async getGitHubRepos(username: string){
-    return await this.http.get <GithubRepo[]> ('https://api.github.com/users/' + username + '/repos');
+  getGitHubRepos(username: string) {
+    return this.http.get <GithubRepo> ('https://api.github.com/users/' + username + '/repos');
   }
 }
