@@ -59,6 +59,14 @@ export class AppComponent implements OnInit {
     }
   }
 
+  /**
+   * https://www.w3schools.com/jsref/event_touchstart.asp
+   */
+  touch(event: TouchEvent) {
+    this.drawing = true;
+    this.draw(event.touches[0].clientX, event.touches[0].clientY);
+  }
+
   clearDrawing() {
     this.ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
   }
