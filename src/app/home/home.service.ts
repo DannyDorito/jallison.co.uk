@@ -6,8 +6,4 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeService {
   constructor(private http: HttpClient) { }
-
-  getGitHubProfile(username: string) {
-    return this.http.get <GitHubProfile> ('https://api.github.com/users/' + username);
-  }
 }
