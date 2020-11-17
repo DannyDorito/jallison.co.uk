@@ -17,11 +17,12 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-        enableTracing: environment.tracing,
-        scrollPositionRestoration: 'enabled',
-        anchorScrolling: 'enabled',
-        scrollOffset: [0, 0]
-      })
+    enableTracing: environment.tracing,
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    scrollOffset: [0, 0],
+    relativeLinkResolution: 'legacy'
+})
     ],
   exports: [
     RouterModule
