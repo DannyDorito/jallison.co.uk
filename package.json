@@ -19,7 +19,7 @@
     "@angular/platform-browser": "^13.2.3",
     "@angular/platform-browser-dynamic": "^13.2.5",
     "@angular/pwa": "^13.2.2",
-    "@angular/router": "^13.2.5",
+    "@angular/router": "^13.3.4",
     "@angular/service-worker": "^13.3.1",
     "ajv": "^6.12.6",
     "angular-cli-ghpages": "^1.0.0",
