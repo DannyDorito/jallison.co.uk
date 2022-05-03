@@ -18,7 +18,7 @@
     "@angular/forms": "^13.3.4",
     "@angular/platform-browser": "^13.3.5",
     "@angular/platform-browser-dynamic": "^13.2.5",
-    "@angular/pwa": "^13.2.2",
+    "@angular/pwa": "^13.3.4",
     "@angular/router": "^13.3.4",
     "@angular/service-worker": "^13.3.1",
     "ajv": "^8.11.0",
