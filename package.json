@@ -24,14 +24,14 @@
     "ajv": "^8.11.0",
     "angular-cli-ghpages": "^1.0.0",
     "classlist.js": "^1.1.20150312",
-    "core-js": "^3.22.4",
+    "core-js": "^3.22.8",
     "rxjs": "^7.5.5",
     "tslib": "^2.4.0",
     "zone.js": "~0.11.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^13.3.4",
-    "@angular/cli": "^13.3.4",
+    "@angular/cli": "^14.0.1",
     "@angular/compiler-cli": "^13.3.5",
     "@angular/language-service": "^13.3.5",
     "@types/jasmine": "^4.0.3",
