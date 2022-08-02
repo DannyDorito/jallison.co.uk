@@ -22,7 +22,7 @@
     "@angular/router": "^14.1.0",
     "@angular/service-worker": "^14.0.4",
     "ajv": "^8.11.0",
-    "angular-cli-ghpages": "^1.0.0",
+    "angular-cli-ghpages": "^1.0.3",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.0",
     "rxjs": "^7.5.6",
