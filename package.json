@@ -19,19 +19,19 @@
     "@angular/platform-browser": "^14.0.4",
     "@angular/platform-browser-dynamic": "^14.0.4",
     "@angular/pwa": "^14.0.4",
-    "@angular/router": "^14.0.4",
+    "@angular/router": "^14.1.0",
     "@angular/service-worker": "^14.0.4",
     "ajv": "^8.11.0",
     "angular-cli-ghpages": "^1.0.0",
     "classlist.js": "^1.1.20150312",
-    "core-js": "^2.5.0",
+    "core-js": "^3.24.1",
     "rxjs": "^7.5.5",
     "tslib": "^2.4.0",
-    "zone.js": "~0.11.6"
+    "zone.js": "~0.11.7"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.4",
-    "@angular/cli": "^14.0.4",
+    "@angular/cli": "^14.1.0",
     "@angular/compiler-cli": "^14.0.4",
     "@angular/language-service": "^14.0.4",
     "@types/jasmine": "^4.0.3",
