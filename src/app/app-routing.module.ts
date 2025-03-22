@@ -20,8 +20,7 @@ const routes: Routes = [
     enableTracing: environment.tracing,
     scrollPositionRestoration: 'enabled',
     anchorScrolling: 'enabled',
-    scrollOffset: [0, 0],
-    relativeLinkResolution: 'legacy'
+    scrollOffset: [0, 0]
 })
     ],
   exports: [
