@@ -18,7 +18,8 @@ import { ExperienceComponent } from './experience/experience.component';
 // services
 import { HomeService } from './home/home.service';
 
-@NgModule({ declarations: [
+@NgModule( {
+    declarations: [
         // components
         AppComponent,
         NotFoundComponent,
@@ -29,13 +30,14 @@ import { HomeService } from './home/home.service';
         EducationComponent,
         ExperienceComponent
     ],
-    bootstrap: [AppComponent], imports: [FormsModule,
+    bootstrap: [ AppComponent ], imports: [ FormsModule,
         BrowserModule,
         // routing
         AppRoutingModule,
-        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })], providers: [
-        // services
-        HomeService,
-        provideHttpClient(withInterceptorsFromDi())
-    ] })
+        ServiceWorkerModule.register( 'ngsw-worker.js', { enabled: environment.production } ) ], providers: [
+            // services
+            HomeService,
+            provideHttpClient( withInterceptorsFromDi() )
+        ]
+} )
 export class AppModule { }

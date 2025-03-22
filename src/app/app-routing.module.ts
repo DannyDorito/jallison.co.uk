@@ -14,17 +14,17 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];
-@NgModule({
+@NgModule( {
   imports: [
-    RouterModule.forRoot(routes, {
-    enableTracing: environment.tracing,
-    scrollPositionRestoration: 'enabled',
-    anchorScrolling: 'enabled',
-    scrollOffset: [0, 0]
-})
-    ],
+    RouterModule.forRoot( routes, {
+      enableTracing: environment.tracing,
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+      scrollOffset: [ 0, 0 ]
+    } )
+  ],
   exports: [
     RouterModule
   ]
-})
-export class AppRoutingModule {}
+} )
+export class AppRoutingModule { }
