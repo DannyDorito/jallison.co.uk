@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './/app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -18,31 +18,24 @@ import { ExperienceComponent } from './experience/experience.component';
 // services
 import { HomeService } from './home/home.service';
 
-@NgModule({
-  declarations: [
-    // components
-    AppComponent,
-    NotFoundComponent,
-    HomeComponent,
-    ContactComponent,
-    ProjectsComponent,
-    SkillsComponent,
-    EducationComponent,
-    ExperienceComponent
-  ],
-  imports: [
-    // required
-    HttpClientModule,
-    FormsModule,
-    BrowserModule,
-    // routing
-    AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
-  ],
-  providers: [
-    // services
-    HomeService
-  ],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        // components
+        AppComponent,
+        NotFoundComponent,
+        HomeComponent,
+        ContactComponent,
+        ProjectsComponent,
+        SkillsComponent,
+        EducationComponent,
+        ExperienceComponent
+    ],
+    bootstrap: [AppComponent], imports: [FormsModule,
+        BrowserModule,
+        // routing
+        AppRoutingModule,
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })], providers: [
+        // services
+        HomeService,
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 export class AppModule { }
